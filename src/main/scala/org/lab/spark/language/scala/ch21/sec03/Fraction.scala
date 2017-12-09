@@ -38,7 +38,10 @@ package com.horstmann.impatient {
 
 object Main extends App {
 
-  import com.horstmann.impatient.FractionConversions._
+//  import com.horstmann.impatient.FractionConversions._ //引入所以的方法
+  import com.horstmann.impatient.FractionConversions.fraction2Double //只引入 fraction2Double 函数
+//  import com.horstmann.impatient.FractionConversions.{fraction2Double=> _,_} //表示引入除fraction2Double外的所有成员
+
 
   val result = 3 * Fraction(4, 5)
 
