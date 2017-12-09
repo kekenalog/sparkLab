@@ -22,10 +22,13 @@ class Fraction(n: Int, d: Int) {
 }
 
 object Fraction {
+
   def apply(n: Int, d: Int) = new Fraction(n, d)
+
 }
 
 object Main extends App {
+
   implicit def int2Fraction(n: Int) = Fraction(n, 1)
 
   val result = 3 * Fraction(4, 5) // Calls int2Fraction(3)
