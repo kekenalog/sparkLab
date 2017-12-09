@@ -1,11 +1,11 @@
-package org.lab.spark.language.scala.ch21
+package org.lab.spark.language.scala.ch21.sec01
 
 /**
   * Created by wy on 12/6/17.
   */
 
-import scala.math._
 import scala.language.implicitConversions
+import scala.math._
 
 class Fraction(n: Int, d: Int) {
 
