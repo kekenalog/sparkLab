@@ -1,0 +1,21 @@
+隐式转换规则
+
+隐式函数在如下三种各不相同的情况会被考虑
+
+* 当表达式的类型与预期的类型不同时
+  sqrt(Fraction(1,4)) //将调用的fraction2Double,因为sqrt预期的是一个Double
+
+* 当对象访问一个不存在的成员时
+  new File("README").read //将调用file2RichFile，因为File没有read方法
+
+* 当对象调用某个方法，而该方法的参数声明与传入参数不匹配时:
+  3 * Fraction(4,5) //将调用int2Fraction,因为Int的*方法不接受Fraction作参数
+
+有三种情况编译器不会尝试使用隐式转换
+* 如果代码能够在不使用隐式转换的前提下通过编译，则不会使用隐式转换。
+  举例来说,如果 a * b 能够编译，那么编译器不会尝试 a * convert(b) 或者 convert(a) * b
+
+* 编译器不会尝试同时执行多个转换,比如convert1(convert2(a)) * b
+
+* 存在二义性的转化是个错误。举例来说，如果convert1(a) * 和 convert2(a) * b 都是合法的，编译器将会报错。
+
