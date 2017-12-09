@@ -38,7 +38,7 @@ object Main extends App {
 
 /**
 使用 scalac -Xprint:typer MyProg.scala
- 
+
 package org.lab.spark.language.scala.ch21.sec04 {
   import scala.math._;
   class Fraction extends scala.AnyRef {
