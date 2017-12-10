@@ -6,7 +6,7 @@
 
     <groupId>org.ywgo.lab.spark</groupId>
     <artifactId>sparklab</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.3</version>
     <name>spark-lab</name>
     <properties>
         <hadoop.version>2.6.3</hadoop.version>

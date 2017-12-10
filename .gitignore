@@ -7,3 +7,4 @@ target/
 *.DS_Store
 *.idea/
 *.iml
+//src/main/scala/org/lab/spark/language/scala/ch*/sec*/repl-session.scala
